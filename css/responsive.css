@@ -1,0 +1,289 @@
+@media all and  (min-width: 768px) {
+
+    /* header */
+    
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+      }
+    
+      .header-title {
+        margin-top: 30px;
+    }
+    
+      .burgermenu {
+        display: none;
+      }
+    
+      .navbar {
+        position: unset;
+        border-top: unset;
+        background-color: unset;
+        margin-top: 30px;
+        padding: unset;
+        animation: unset;
+        display: block;
+        height: unset;
+      }
+    
+      .nav-list {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+    .list-item {
+        border-bottom: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+      }
+    
+      .list-link {
+        font-size: 11px;
+        letter-spacing: 1px;
+        position: relative;
+      }
+      
+    .list-link::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: green;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        transform: 0.3s;
+    }
+
+    .list-link:hover::after {
+        width: 100%;
+    }
+    .line {
+        margin-top: 40px; 
+    }
+    .arrow, .circle {
+        display: none;
+    }
+      
+    
+    /* section-planet */
+    
+    .info, .line-bottom {
+        display: none;
+    }
+    .image {
+        position: relative;
+    }
+    
+    .planet-img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;  
+    }
+    
+    .geology-img {
+        top: 200px;
+        left: 333px;
+        position: absolute;
+        width: 150px;
+    }
+     
+      .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 138px 40px 27px 39px;
+    }
+    
+    
+    .planet-info {
+        margin-top: 2px;
+    }
+    
+    .planet-name {
+        text-align: start;
+        font-size: var(--planet-name-md); 
+    }
+    
+    .planet-text {
+        text-align: start;
+    }
+    
+    .source-link {
+        justify-content: flex-start;
+    }
+    
+    .option-info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    
+    
+    .option {
+        display: flex;
+        align-items: center;
+        background: #070724;
+        width: 285px;
+        margin: 4px 4px 0 10px;
+        padding: 5px 0 5px 0;
+        gap: 17px;
+   
+    }
+    
+    .option:hover {
+        background-color: rgb(109, 109, 231);
+    }
+    
+    .option-number {
+        font-family: 'spartan-latin-regular' , cursive;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: var(--text-white);
+        opacity: .5;
+        padding: 8px 0 8px 20px;
+    }
+    
+    .option-text {
+        font-family: 'spartan-latin' , cursive;
+        font-size: var(--option-p-lg-fs);
+        line-height: 25px;
+        color: var(--text-white);
+        letter-spacing: 1.93px;
+        opacity: 1;
+        text-transform: uppercase;
+    }
+    
+    /* section-orbital-characteristics */
+    
+    .orbital-characteristics {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        border: 1px solid #ffffff;
+        color: #fff;
+        height: 88px;
+        width: 150px;
+    }
+    
+    .info-text, .info-number {
+        margin-left: 20px;
+        
+    }
+    
+    }
+    
+    @media all and  (min-width: 1200px) {
+    
+        .header {
+            flex-direction: row;
+            padding: unset;
+            justify-content: space-between;
+          }
+    
+          .header-title {
+            margin: 22px 0 32px 30px;
+        }
+    
+          .navbar {
+            margin: unset;
+            display: inline;
+            width: unset;
+            padding-right: 20px;
+          }
+    
+        .nav-list {
+            gap: 33px;
+          }
+    
+        .list-item {
+            position: relative;
+            cursor: pointer;
+          }
+    
+        .list-link {
+            opacity: 0.75;
+          }
+    
+        .line {
+            margin-top: 1px
+        }
+    
+    
+    .planet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .container {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    
+    .image {
+        margin-left: 200px;
+        margin-top: 200px;  
+    }
+    
+    .geology-img {
+        top: 220px;
+        left: 60px;
+        width: 150px;
+    }
+    .planet-info {
+        gap: 23px;
+    }
+     .planet-name {
+            text-align: normal;
+            font-size: var(--planet-name-lg); 
+        }
+    
+    .planet-text {
+            width: 350px;
+            text-align: normal;
+            font-size: var(--section-p-lg-fs);
+            padding-top: 20px
+        }
+        
+    .source-link {
+            justify-content: flex-start;
+        }
+    .source, .Wikipedia-link {
+        font-size: var(--section-source-lg-fs);
+    }
+    
+    .option {
+        width: 350px;
+    }
+    
+    
+    .orbital-characteristics {
+        gap: 30px;
+    }
+    .content {
+        width: 230px;
+        height: 130px;
+        gap: 20px;
+    }
+    .info-text {
+        font-size: 2rem ;
+    }
+    .info-number {
+        font-size: 4rem;
+    }
+    
+    }
+        
+    
+    

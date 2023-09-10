@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #070724;
+    background-image: url(../assets/images/background-stars.svg);        
+}
+
+html {
+    font-size: 10px;
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body  .line {
+   max-width: 100%;
+}

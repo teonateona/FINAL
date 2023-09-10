@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> planets </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header-title"> THE PLANETS </h1>
+    <img class="burgermenu" src="assets/images/icon-burger.svg" alt="icon-burger">
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="list-item">
+              <div class="circle mercury"></div>
+              <a class="list-link" id="mercury"  href=""> MERCURY </a>
+              <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+            </li>
+            <li class="list-item"> 
+               <div class="circle venus"></div>
+               <a class="list-link"  id="venus" href=""> VENUS </a>
+               <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+              </li>
+            <li class="list-item"> 
+              <div class="circle earth"></div>
+               <a  class="list-link" href=""> EARTH </a>
+               <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+            </li>
+            <li class="list-item"> 
+              <div class="circle mars"></div> 
+              <a  class="list-link" href=""> MARS </a>
+              <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+            </li>
+            <li class="list-item">
+              <div class="circle jupiter"></div>
+               <a  class="list-link" ref=""> JUPITER </a>
+               <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+            </li>  
+            <li class="list-item"> 
+              <div class="circle saturn"></div>
+               <a  class="list-link" href=""> SATURN </a>
+              <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow"> 
+            </li>
+            <li class="list-item"><div class="circle uranus"></div>
+               <a  class="list-link" href=""> URANUS </a>
+               <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+            </li>
+            <li class="list-item">
+               <div class="circle neptune"></div>
+               <a  class="list-link" href=""> NEPTUNE </a> 
+               <img class="arrow" src="assets/images/icon-chevron.svg" alt="arrow">
+            </li>
+        </ul>
+    </nav> 
+  </header>
+  
+    <hr class="line">
+    <section class="info">
+       <p class="text"> OVERVIEW </p>
+       <p class="text2"> STRUCTURE </p>
+       <p class="text3"> GEOLOGY </p>
+    </section>
+      <hr class="line-bottom">
+    
+  
+    <section class="planet">
+    <div class="image">
+        <img class="planet-img" alt="mercury-img"/>
+        <img class="geology-img" alt="">
+      </div>
+    
+  
+    <div class="container">
+      <div class="planet-info">
+         <h1 class="planet-name"> </h1>
+         <p class="planet-text"> </p>
+        <div class="source-link">
+          <p class="source"> Source: </p> 
+          <a class="Wikipedia-link" href=""> Wikipedia </a>
+          <img class="source-icon" src="assets/images/icon-source.svg" alt="source-icon">
+        </div>
+      </div>  
+      <div class="option-info">
+        <button class="option" id="overview-btn">
+            <span class="option-number"> 01 </span>
+            <p class="option-text"> OVERVIEW </p>
+        </button>
+        <button class="option" id="interan-btn">
+            <span class="option-number"> 02 </span>
+            <p class="option-text"> INTERNAL  STRUCTURE  </p>
+        </button>
+        <button class="option" id="surface-btn">
+            <span class="option-number"> 03 </span>
+            <p class="option-text"> SURFACE  GEOLOGY </p>
+        </button>
+      </div> 
+     </div>
+  </section>
+  
+  <section class="orbital-characteristics">
+       
+        <div class="content"> 
+          <p class="info-text"> ROTATION TIME</p>
+          <p class="info-number" id="ROTATION_TIME"> </p>
+        </div>
+  
+        <div class="content"> 
+          <p class="info-text"> REVOLUTION TIME</p>
+          <p class="info-number" id="REVOLUTION_TIME">  </p>
+        </div>
+  
+        <div class="content"> 
+          <p class="info-text"> RADIUS </p>
+          <p class="info-number" id="RADIUS">  </p>
+        </div>
+  
+        <div class="content"> 
+          <p class="info-text"> AVERAGE TEMP </p>
+          <p class="info-number" id="AVERAGE_TEMP"> </p>
+        </div>
+  
+   </section>
+
+
+</body>
+</html>

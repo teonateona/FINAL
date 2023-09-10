@@ -1,0 +1,316 @@
+:root {
+  --text-white: #FFFFFF;
+  --section-p-sm-fs: 1.5rem;
+  --section-p-lg-fs: 1.4rem;
+  --section-source-sm-fs: 1.2rem;
+  --section-source-lg-fs: 1.5rem;
+  --option-p-sm-fs: 1rem;
+  --option-p-lg-fs: 1.2rem;
+  --planet-name-sm: 4rem;
+  --planet-name-md: 4.8rem;
+  --planet-name-lg: 8rem;
+
+}
+
+
+
+/* header */
+
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 25px;
+width: 100%;
+top: 0px;
+}
+
+.header-title {
+  font-family: 'antonio' ,  cursive;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: var(--text-white);
+  margin-left: 15px; 
+}
+
+.burgermenu {
+width: 24px;
+height: 17px;
+margin-right: 15px;
+}
+
+.navbar {
+  position: absolute;
+  top: 88px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #070724;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  margin: -20px;
+  padding: 34px 70px;
+  animation: fallDown 1s ease-in-out forwards;
+  display: none;
+}
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.open {
+  display: inline;
+  animation: fallDown 1s ease-in-out forwards;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.title-circle {
+  display: flex;
+  gap: 25px;
+}
+
+.list-link {
+  color: #fff;
+  text-align: left;
+  font-family: 'spartan-latin' , cursive;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.mercury {
+  background-color: #def4fc;
+}
+.venus {
+  background-color: #f7cc7f;
+}
+.earth {
+  background-color: #545bfe;
+}
+.mars {
+  background-color: #ff6a45;
+}
+
+.jupiter {
+  background-color: #ecad7a;
+}
+.saturn {
+  background-color: #fccb6b;
+}
+.uranus {
+  background-color: #65f0d5;
+}
+.neptune {
+  background-color: #497efa;
+}
+
+.arrow {
+  width: 4px;
+  height: 8px;
+  margin-top: 4px;
+}
+
+
+
+.line, .line-bottom {
+  background-color: #fff;
+  opacity: .2;
+  mix-blend-mode: normal;
+}
+
+
+/* section-planet */
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  margin: 20px;
+}
+
+.text, .text2, .text3 {
+  font-family: 'spartan-latin' , cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 10px;
+  color: var(--text-white);
+  letter-spacing: 1.93px;
+  opacity: .4;    
+  text-transform: uppercase;
+}
+.planet {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.planet-info  {
+  display: flex;
+  flex-direction: column;
+  margin: 95px 22px 25px 20px; 
+  gap: 15px;
+}
+
+.option-info {
+  display: none;
+}
+
+.image {
+  position: relative;
+  margin-top: 30px; 
+}
+
+.planet-img {
+  width: 150px;
+  height: 150px;   
+}
+
+.geology-img {
+position: absolute;
+width: 100px;
+top: 90px;
+left: 226px;
+}
+
+.planet-name {
+  font-family: 'antonio' , cursive;
+  font-size: var(--planet-name-sm);
+  font-weight: 400;
+  line-height: 50px;
+  color: #FFFFFF;
+
+}
+
+.planet-text {
+  font-family: 'spartan-latin-regular' , cursive;
+  font-size: var(--section-p-sm-fs);
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--text-white);
+}
+
+.source-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 5px;
+}
+
+
+.source {
+  font-family: 'spartan-latin' , cursive;
+  font-size: var(--section-source-sm-fs);
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: var(--text-white);
+  opacity: .5;
+
+}
+
+.Wikipedia-link {
+  font-family: 'spartan-latin' , cursive;
+  color: var(--text-white);
+  text-decoration: underline;
+  opacity: .5;
+  font-size: var(--section-source-sm-fs);
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.source-icon {
+  width: 11px;
+  height: 12px;
+  opacity: .0.5;
+}
+
+
+
+
+/* section-orbital-characteristics */
+
+.orbital-characteristics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  padding: 20px 30px 20px 30px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.1px solid #f3efef;
+  color: #fff;
+  height: 48px;
+}
+
+
+.info-text {
+  font-family: 'spartan-latin'  , cursive;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--text-white);
+  opacity: .5;
+  margin-left: 20px;
+}
+
+.info-number {
+  font-family: 'antonio', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--text-white);
+  margin-right: 20px;
+  margin-left: 50px;
+
+}
+
+
+
+
+
+@font-face {
+  src: url(../assets/fonts/antonio.woff2);
+  font-family: 'antonio';
+}
+
+@font-face {
+  src: url(../assets/fonts/league-spartan-v11-latin-700.woff2);
+  font-family: 'spartan-latin';
+}
+
+@font-face {
+  src: url(../assets/fonts/league-spartan-v11-latin-regular.woff2);
+  font-family: 'spartan-latin-regular';
+}
+  
